@@ -9,7 +9,7 @@
 @time: 14/11/17 下午4:06
 """
 import requests
-
+import logging
 from page import Page
 
 
@@ -23,3 +23,11 @@ class Crawl(object):
             response = requests.get(url)
             pages.append(Page(name, url, response))
         return pages
+
+    @classmethod
+    def crawler(cls, name, url):
+        response = requests.get(url)
+        if response.status_code != 200:
+            logging.error("Page is not crawler success:{}".format(url))
+            return None
+        return Page(name, url, response)
