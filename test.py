@@ -14,4 +14,7 @@ from bs4 import BeautifulSoup
 
 urls_map = {u'知乎日报': 'https://news-at.zhihu.com/api/4/news/latest'}
 if __name__ == '__main__':
-    pass
+    c = Crawl(urls_map)
+    rs = c.crawl()
+    print rs
+

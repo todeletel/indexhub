@@ -30,4 +30,5 @@ class Crawl(object):
         if response.status_code != 200:
             logging.error("Page is not crawler success:{}".format(url))
             return None
-        return Page(name, url, response)
+        return Page(name,url,response)
+
