@@ -8,8 +8,6 @@
 @file: page
 @time: 14/11/17 下午3:58
 """
-
-
 class Page(object):
     """
     restore a html format data resource.
@@ -24,3 +22,4 @@ class Page(object):
         self.status = response.status_code
         self.headers = response.headers
         self.content = response.content
+

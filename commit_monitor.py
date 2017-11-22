@@ -9,10 +9,14 @@
 @time: 14/11/17 下午6:46
 """
 from datetime import date
+
 from bs4 import BeautifulSoup
+
+from _local_settings import SMTP_SETTING
 from crawl import Crawl
 from utils import email_util
-from _local_settings import SMTP_SETTING
+
+
 git_homepage = 'https://github.com/Sengege'
 
 

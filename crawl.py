@@ -8,8 +8,10 @@
 @file: crawl
 @time: 14/11/17 下午4:06
 """
-import requests
 import logging
+
+import requests
+
 from page import Page
 
 
